@@ -1,0 +1,850 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HyUI kit</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- slick css-->
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/hyui.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+    <!-- 直接跳主內容區 -->
+    <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
+    <!-- wrapper Start -->
+    <div class="wrapper">
+        <!-- header Start -->
+        <header class="header">
+            <div class="container">
+                <h1>
+                    <a href="index.htm"><img src="images/logo.png" alt="網站標題" /></a>
+                </h1>
+                <!-- account login -->
+                <div class="dropdown">
+                    <a href="#" class="btn dropdown-btn"><i class="i_man"></i></a>
+                    <div class="dropdown-content">
+                        <!-- 登入後 -->
+                        <div class="account_info"> Hi!<span> 王大明</span>
+                        </div>
+                        <div class="btn_grp">
+                            <button class="btn">搜尋紀錄</button>
+                            <button class="btn btn-red">登出</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header End -->
+        <!-- main Start -->
+        <div id="center" class="main">
+            <div class="container">
+                <!-- 查詢區塊 -->
+                <section class="searchBlock">
+                    <div class="searchForBook">
+                        <h2><i class="i_search"></i>搜尋</h2>
+                        <div class="divider">書目關鍵字</div>
+                        <div class="flex-form">
+                            <div class="form_grp">
+                                <i class="i_book"></i>
+                                <a href="#" class="i_close"></a>
+                                <input type="text" id="" placeholder="請輸入書目關鍵字" value="" class="int">
+                            </div>
+                            <div class="keyword">
+                                <span>熱門關鍵字：</span>
+                                <ul>
+                                    <li><a href="#">番茄工作法</a></li>
+                                    <li><a href="#">楊牧</a></li>
+                                    <li><a href="#">原子習慣</a></li>
+                                    <li><a href="#">瘟疫與人</a></li>
+                                </ul>
+                            </div>
+                            <div class="divider">請選擇圖書館</div>
+                            <div class="libraryChoose">
+                                <a href="#" class="i_close"></a>
+                                <ul>
+                                    <li>
+                                        <a href="#">HyRead 電子書城 <i class="i_close"></i>
+                                        </a>
+                                    </li>
+                                    <!-- <li>
+                                        <a href="#">新北市立圖書館 <i class="i_close"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">國家圖書館 <i class="i_close"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">國立臺灣圖書館 <i class="i_close"></i>
+                                        </a>
+                                    </li> -->
+                                    <li class="addLibrary">
+                                        <a href="#"><i class="i_plus"></i>新增圖書館 </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btn_grp">
+                                <button class="btn btn-green">查詢</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="keyVision wow fadeInRight" data-wow-duration=".8s" data-wow-delay=".5s">
+                    </div>
+                </section>
+                <!-- 閱讀排行榜 -->
+                <section class="ranking wow fadeInUp" data-wow-duration=".8s" data-wow-delay="1s">
+                    <h2>閱讀排行榜</h2>
+                    <div class="tabSet">
+                        <section class="tabs">
+                            <h2 class="tabItem active"><a href="#">HyRead 電子書城暢銷榜</a></h2>
+                            <!--選到的頁籤項目-->
+                            <div class="tabContent">
+                                <div class="bookList">
+                                    <ul>
+                                        <li>
+                                            <div class="num">1</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_09.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>原子習慣</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">2</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_01.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>商業周刊</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">3</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_02.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>世界又熱又平又擠</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">4</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_03.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>放棄的魚</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">5</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_04.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>2030世界未來報告書</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">6</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_05.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>黏力</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">7</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_06.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>天天MBA升級你的思維模式</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">8</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_07.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>適應</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">9</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_08.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>社會上流</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">10</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_10.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>心態致富</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">11</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_11.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>臺灣沒說你不知道</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">12</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_12.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>讀懂一本書</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more">更多</a>
+                            </div>
+                            <h2 class="tabItem"><a href="#">公共圖書館借閱榜</a></h2>
+                            <div class="tabContent">
+                                <div class="bookList">
+                                    <ul>
+                                        <li>
+                                            <div class="num">1</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_01.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>商業周刊</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">2</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_02.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>世界又熱又平又擠</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">3</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_03.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>放棄的魚</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">4</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_04.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>2030世界未來報告書</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">5</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_05.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>黏力</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">6</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_06.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>天天MBA升級你的思維模式</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">7</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_07.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>適應</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">8</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_08.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>社會上流</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">9</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_09.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>原子習慣</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">10</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_10.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>心態致富</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">11</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_11.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>臺灣沒說你不知道</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">12</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_12.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>讀懂一本書</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="more"><a href="#">更多</a></div>
+                            </div>
+                            <h2 class="tabItem"><a href="#">公共圖書館借閱榜</a></h2>
+                            <div class="tabContent">
+                                <div class="bookList">
+                                    <ul>
+                                        <li>
+                                            <div class="num">1</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_05.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>黏力</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">2</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_02.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>世界又熱又平又擠</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">3</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_03.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>放棄的魚</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">4</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_01.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>商業周刊</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">5</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_04.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>2030世界未來報告書</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">6</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_06.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>天天MBA升級你的思維模式</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">7</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_07.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>適應</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">8</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_08.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>社會上流</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">9</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_09.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>原子習慣</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">10</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_10.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>心態致富</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">11</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_11.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>臺灣沒說你不知道</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">12</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_12.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>讀懂一本書</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="more"><a href="#">更多</a></div>
+                            </div>
+                            <h2 class="tabItem"><a href="#">HyRead 電子書城租書榜</a></h2>
+                            <div class="tabContent">
+                                <div class="bookList">
+                                    <ul>
+                                        <li>
+                                            <div class="num">1</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_01.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>商業周刊</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">2</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_02.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>世界又熱又平又擠</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">3</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_03.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>放棄的魚</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">4</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_04.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>2030世界未來報告書</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">5</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_05.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>黏力</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">6</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_06.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>天天MBA升級你的思維模式</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">7</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_07.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>適應</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">8</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_08.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>社會上流</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">9</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_09.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>原子習慣</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">10</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_10.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>心態致富</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">11</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_11.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>臺灣沒說你不知道</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="num">12</div>
+                                            <a href="#">
+                                                <div class="bookCover">
+                                                    <img src="images/book_12.jpg" alt="">
+                                                </div>
+                                                <div class="book-title">
+                                                    <span>讀懂一本書</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="more"><a href="#">更多</a></div>
+                            </div>
+                        </section>
+                        <hr>
+                    </div>
+                </section>
+                <!-- 促銷活動 -->
+                <section class="promotion  wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".5s">
+                    <h2>促銷活動</h2>
+                    <div class="mpSlider">
+                        <div class="img-container">
+                            <a href="#" title="">
+                                <picture>
+                                    <source media="(min-width: 1200px)" data-srcset="images/banner_01.jpg">
+                                    <source media="(min-width: 992px)" data-srcset="images/banner_01.jpg">
+                                    <source media="(min-width: 576px)" data-srcset="images/banner_01.jpg">
+                                    <source media="(max-width: 575px)" data-srcset="images/banner_01.jpg">
+                                    <img data-src="images/banner_01.jpg" class="cover lazy">
+                                    <noscript><img src="images/banner_01.jpg"></noscript>
+                                </picture>
+                                <span class="caption">圖說1</span>
+                            </a>
+                        </div>
+                        <div class="img-container">
+                            <a href="#" title="">
+                                <picture>
+                                    <source media="(min-width: 1200px)" data-srcset="images/banner_02.jpg">
+                                    <source media="(min-width: 992px)" data-srcset="images/banner_02.jpg">
+                                    <source media="(min-width: 576px)" data-srcset="images/banner_02.jpg">
+                                    <source media="(max-width: 575px)" data-srcset="images/banner_02.jpg">
+                                    <img data-src="images/banner_02.jpg" class="cover lazy">
+                                    <noscript><img src="images/banner_02.jpg"></noscript>
+                                </picture>
+                                <span class="caption">圖說2</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- fatfooter Start -->
+        <section class="fatfooter">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#">關於 HyRead</a>
+                            <ul>
+                                <li><a href="#">服務政策</a></li>
+                                <li><a href="#">隱私權政策</a></li>
+                                <li><a href="#">序號兌換說明</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">會員服務</a>
+                            <ul>
+                                <li><a href="#">常見問題</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">合作提案</a>
+                            <ul>
+                                <li><a href="#">出版社合作</a></li>
+                                <li><a href="#">團體採購優惠</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="contact_info">
+                    <h3>聯絡客服</h3>
+                    <p> 客服時間：週一～週五 09:00-18:30<br /> 客服專線：02-2395-6966 #2555<br /> Email：service@hyread.com.tw <br />100 台北市中正區重慶南路二段 51 號 5 樓 </p>
+                </div>
+                <div class="social_media">
+                    <h3>社群動態</h3>
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/icon_fb.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/icon_youtube.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- fatfooter End -->
+        <!-- footer Start-->
+        <footer>
+            <div class="container">
+                <div class="footer_logo">
+                    <img src="images/logo.png" alt="" class="img-responsive">
+                </div>
+                <div class="footer_info">
+                    <p class="Copyright">凌網科技股份有限公司 Copyright © 2020 hyread</p>
+                </div>
+            </div>
+        </footer>
+        <!-- footer End -->
+    </div>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <!-- 選擇圖書館燈箱Start -->
+    <div class="modal-frame">
+        <div class="modal">
+            <div class="modal-inset">
+                <div class="button close"><i class="i_close"></i></div>
+                <div class="modal-body">
+                    <h3>新增圖書館</h3>
+                    <div class="flex-form">
+                        <div class="form_grp">
+                            <select name="" id="selectSample">
+                                <option value="">地區</option>
+                                <option value="">選項一</option>
+                                <option value="">選項二</option>
+                                <option value="">選項三</option>
+                                <option value="">選項四</option>
+                            </select>
+                        </div>
+                        <div class="form_grp">
+                            <select name="" id="selectSample">
+                                <option value="">類型</option>
+                                <option value="">選項一</option>
+                                <option value="">選項二</option>
+                                <option value="">選項三</option>
+                                <option value="">選項四</option>
+                            </select>
+                        </div>
+                        <div class="form_grp">
+                            <input name="username" type="text" placeholder="找不到圖書館？">
+                        </div>
+                    </div>
+                    <div class="libraryResult">
+                        <div class="form_grp">
+                            <div class="all">
+                                <label><input type="checkbox" value="">全選</label>
+                            </div>
+                            <div class="check_grp">
+                                <label><input type="checkbox" value="">台北市立圖書館</label>
+                                <label><input type="checkbox" value="">新北市立圖書館</label>
+                                <label><input type="checkbox" value="">國家圖書館</label>
+                                <label><input type="checkbox" value="">國立台灣圖書館</label>
+                                <label><input type="checkbox" value="">基隆市文化局</label>
+                                <label><input type="checkbox" value="">台北市立圖書館</label>
+                                <label><input type="checkbox" value="">新北市立圖書館</label>
+                                <label><input type="checkbox" value="">國家圖書館</label>
+                                <label><input type="checkbox" value="">國立台灣圖書館</label>
+                                <label><input type="checkbox" value="">基隆市文化局</label>
+                                <label><input type="checkbox" value="">新北市立圖書館</label>
+                                <label><input type="checkbox" value="">國家圖書館</label>
+                                <label><input type="checkbox" value="">國立台灣圖書館</label>
+                                <label><input type="checkbox" value="">基隆市文化局</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn_grp">
+                        <button class="btn btn-green">確認新增</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay"></div>
+    <!-- 選擇圖書館燈箱End -->
+    <!-- JQ -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- 外掛 plugin js -->
+    <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
+    <script src="vendor/slick/slick.min.js "></script><!-- slick -->
+    <script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
+    <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
+    <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
+    <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+    <!-- hyUI -->
+    <script src="js/hyui.js"></script>
+    <!-- 客製js -->
+    <script src="js/customize.js"></script>
+    <!-- wow -->
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+</body>
+
+</html>
