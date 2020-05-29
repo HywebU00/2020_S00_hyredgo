@@ -32,7 +32,7 @@ $(function() {
     });
     // first init
     if ($('.int').length > 0) {
-        // $('.int').focus();
+        $('.int').focus();
         $('.int').blur(function() {
             if (!$(this).val()) {
                 $(this).attr('placeholder', '請輸入書目關鍵字');
