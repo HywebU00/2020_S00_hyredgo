@@ -35,14 +35,14 @@ $(function() {
         $('.int').focus();
         $('.int').blur(function() {
             if (!$(this).val()) {
-                $(this).attr('placeholder', '請輸入書目關鍵字');
+                $(this).attr('placeholder', '請輸入關鍵字');
                 $(this).siblings('.i_close').hide();
             } else {
                 $(this).siblings('.i_close').show();
             }
         });
         $('.i_close').click(function(e) {
-            $('.int').val('').attr('placeholder', '請輸入書目關鍵字');
+            $('.int').val('').attr('placeholder', '請輸入關鍵字');
             e.preventDefault();
         });
         $('.keyword').find('a').each(function(index, el) {

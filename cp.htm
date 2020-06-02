@@ -56,12 +56,12 @@
                 <section class="searchBlock">
                     <div class="searchForBook">
                         <h2><i class="i_search"></i>搜尋</h2>
-                        <div class="divider">書目關鍵字</div>
+                        <div class="divider">關鍵字</div>
                         <div class="flex-form">
                             <div class="form_grp">
                                 <i class="i_book"></i>
                                 <a href="#" class="i_close"></a>
-                                <input type="text" id="" placeholder="請輸入書目關鍵字" value="" class="int">
+                                <input type="text" id="" placeholder="請輸入關鍵字" value="" class="int">
                             </div>
                             <div class="keyword">
                                 <span>熱門關鍵字：</span>
@@ -72,7 +72,7 @@
                                     <li><a href="#">瘟疫與人</a></li>
                                 </ul>
                             </div>
-                            <div class="divider">請選擇圖書館</div>
+                            <div class="divider">請選擇查詢館</div>
                             <div class="libraryChoose">
                                 <a href="#" class="i_close"></a>
                                 <ul>
@@ -121,38 +121,48 @@
                                 </div>
                                 <div class="bookMeta">
                                     <ul>
-                                        <li><span>作者：</span>詹姆斯．克利爾</li>
+                                        <li><span>作者：</span>詹姆斯．克利爾詹姆斯．克利爾詹姆斯．克利爾</li>
                                         <li><span>譯者：</span>蔡世偉</li>
                                         <li><span>出版社：</span>方智出版</li>
                                         <li><span>出版日期：</span>2019/06/01</li>
+                                        <li><span>格式：</span>Epub</li>
+                                        <li><span>ISBN：</span></li>
+                                    </ul>
+                                </div>
+                                <!-- 付費取得 -->
+                                <div class="payment">
+                                    <h4>書籍價格資訊</h4>
+                                    <div class="btn_grp">
+                                        <button class="btn btn-green">試閱按鈕</button>
+                                        <button class="btn btn-orange">前往Hyread書城</button>
+                                    </div>
+                                    <ul>
+                                        <li>購買：<span>NT 230</span></li>
+                                        <li>租書：<span>NT 15</span></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <hr>
-                        <h3>圖書館借閱</h3>
+                        <h3>借閱資訊</h3>
                         <table>
                             <tr>
-                                <th>館藏地</th>
-                                <th>格式</th>
+                                <th>館別</th>
                                 <th>書籍狀態</th>
                                 <th></th>
                             </tr>
                             <tr>
                                 <td><a href="#">國立臺灣圖書館</a></td>
-                                <td><span class="file">EPUB</span></td>
                                 <td><span class="avalibe">可借閱</span></td>
                                 <td><a href="#" class="btn btn-blue">前往</a></td>
                             </tr>
                             <tr>
                                 <td><a href="#">新北市立圖書館</a></td>
-                                <td><span class="file">JPEG</span><span class="file">EPUB</span></td>
-                                <td><span class="no-avalibe">不可借閱</span></td>
+                                <td><span class="no-avalibe">無借閱複本</span></td>
                                 <td><a href="#" class="btn btn-blue">前往</a></td>
                             </tr>
                             <tr>
                                 <td><a href="#">台北市立圖書館</a></td>
-                                <td><span class="file">PDF</span></td>
                                 <td><span class="avalibe">可借閱</span></td>
                                 <td><a href="#" class="btn btn-blue">前往</a></td>
                             </tr>
@@ -289,9 +299,7 @@
                     </div>
                     <div class="libraryResult">
                         <div class="form_grp">
-                            <div class="info">
-                                最多選擇8個圖書館
-                            </div>
+                            <div class="info"> 最多選擇8個圖書館 </div>
                             <div class="check_grp">
                                 <label><input type="checkbox" value="">台北市立圖書館</label>
                                 <label><input type="checkbox" value="">新北市立圖書館</label>
