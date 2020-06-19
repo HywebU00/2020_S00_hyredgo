@@ -32,6 +32,12 @@
                 <h1>
                     <a href="index.htm"><img src="images/logo.png" alt="網站標題" /></a>
                 </h1>
+                <!-- 電腦版專用 -->
+                <div class="btn_grp">
+                    <button class="btn">搜尋紀錄</button>
+                    <button class="btn">我的常查館</button>
+                    <button class="btn btn-red">登出</button>
+                </div>
                 <!-- account login -->
                 <div class="dropdown">
                     <a href="#" class="btn dropdown-btn"><i class="i_man"></i></a>
@@ -39,8 +45,10 @@
                         <!-- 登入後 -->
                         <div class="account_info"> Hi!<span> 王大明</span>
                         </div>
+                         <!-- 手機版專用 -->
                         <div class="btn_grp">
                             <button class="btn">搜尋紀錄</button>
+                            <button class="btn">我的常查館</button>
                             <button class="btn btn-red">登出</button>
                         </div>
                     </div>
@@ -93,7 +101,7 @@
                                         </a>
                                     </li> -->
                                     <li class="addLibrary">
-                                        <a href="#"><i class="i_plus"></i>新增圖書館 </a>
+                                        <a href="#"><i class="i_plus"></i>新增查詢館 </a>
                                     </li>
                                 </ul>
                             </div>
@@ -109,12 +117,12 @@
                 <section class="content">
                     <div class="lp">
                         <h2 class="title"><i class="i_book"></i>搜尋結果</h2>
-                        <div class="whatYouSearch">
+                        <!-- <div class="whatYouSearch">
                             <ul>
                                 <li><span>關鍵字：</span><a href="#">原子習慣<i class="i_close"></i></a></li>
                                 <li><span>館別：</span><a href="#">國立臺灣圖書館<i class="i_close"></i></a><a href="#">新北市立圖書館<i class="i_close"></i></a></li>
                             </ul>
-                        </div>
+                        </div> -->
                         <div class="bookList">
                             <ul>
                                 <li>
@@ -348,9 +356,7 @@
                     </div>
                     <div class="libraryResult">
                         <div class="form_grp">
-                            <div class="info">
-                                最多選擇8個圖書館
-                            </div>
+                            <div class="info"> 最多選擇8個圖書館 </div>
                             <div class="check_grp">
                                 <label><input type="checkbox" value="">台北市立圖書館</label>
                                 <label><input type="checkbox" value="">新北市立圖書館</label>

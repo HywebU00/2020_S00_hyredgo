@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HyreadGo電子書搜尋入口網</title>
+    <title>HyUI kit</title>
     <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -45,7 +45,7 @@
                         <!-- 登入後 -->
                         <div class="account_info"> Hi!<span> 王大明</span>
                         </div>
-                         <!-- 手機版專用 -->
+                        <!-- 手機版專用 -->
                         <div class="btn_grp">
                             <button class="btn">搜尋紀錄</button>
                             <button class="btn">我的常查館</button>
@@ -115,44 +115,42 @@
                 </section>
                 <!-- 查詢結果區塊 -->
                 <section class="content">
-                    <div class="lp">
-                        <h2 class="title"><i class="i_book"></i>搜尋結果</h2>
+                    <div class="sp">
+                        <h2 class="title"><i class="i_book"></i>我的常查館</h2>
                         <!-- <div class="whatYouSearch">
                             <ul>
-                                <li><span>關鍵字：</span><a href="#">原子習慣<i class="i_close"></i></a></li>
-                                <li><span>館別：</span><a href="#">國立臺灣圖書館<i class="i_close"></i></a><a href="#">新北市立圖書館<i class="i_close"></i></a></li>
+                                <li>共有 <span>234</span> 筆搜尋紀錄</li>
                             </ul>
                         </div> -->
-                        <div class="bookList">
+                        <div class="setting">
+                            <p>最多可設定8個查詢館整合查詢</p>
+                        </div>
+                        <div class="libraryChoose">
                             <ul>
                                 <li>
-                                    <a href="cp.htm">
-                                        <div class="bookCover">
-                                            <img src="images/book_09.jpg" alt="">
-                                        </div>
-                                        <div class="book-title">
-                                            <span>原子習慣</span>
-                                        </div>
+                                    <a href="#">HyRead 電子書城 <i class="i_close"></i>
                                     </a>
                                 </li>
-
+                                <!-- <li>
+                                        <a href="#">新北市立圖書館 <i class="i_close"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">國家圖書館 <i class="i_close"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">國立臺灣圖書館 <i class="i_close"></i>
+                                        </a>
+                                    </li> -->
+                                <li class="addLibrary">
+                                    <a href="#"><i class="i_plus"></i>新增查詢館 </a>
+                                </li>
                             </ul>
                         </div>
-                        <!-- 分頁 -->
-                        <div class="pagination">
-                            <div class="total"> 共<span>308</span>筆資料，第<span>1/18</span>頁，</div>
-                            <div class="items">每頁顯示 <a href="#">20</a> <a href="#">40</a> <a href="#">60</a> 筆 </div>
-                            <ul class="page">
-                                <li class="first"><a href="#" title="第一頁">第一頁</a></li>
-                                <li class="prev"><a href="#" title="回上一頁">回上一頁 </a></li>
-                                <li class="active"><a href="#">1</a></li>
-                                <li class="xs_hidden"><a href="#">2</a></li>
-                                <li class="xs_hidden"><a href="#">3</a></li>
-                                <li class="xs_hidden"><a href="#">4</a></li>
-                                <li class="xs_hidden"><a href="#">5</a></li>
-                                <li class="next"><a href="#" title="下一頁">下一頁</a></li>
-                                <li class="last"><a href="#" title="最後一頁">最後一頁</a></li>
-                            </ul>
+                        <div class="btn_grp">
+                            <button type="button" class="btn btn-primary">確認</button>
+                            <button type="button" class="btn">清除</button>
                         </div>
                     </div>
                 </section>
@@ -247,9 +245,7 @@
                     </div>
                     <div class="libraryResult">
                         <div class="form_grp">
-                            <div class="info">
-                                最多選擇8個圖書館
-                            </div>
+                            <div class="info"> 最多選擇8個圖書館 </div>
                             <div class="check_grp">
                                 <label><input type="checkbox" value="">台北市立圖書館</label>
                                 <label><input type="checkbox" value="">新北市立圖書館</label>
