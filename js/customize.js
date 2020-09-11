@@ -30,6 +30,15 @@ $(function() {
         lazyLoad: 'ondemand',
         ease: 'ease'
     });
+     $('.newslider').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        autoplay: true,
+        fade: false,
+        lazyLoad: 'ondemand',
+        ease: 'ease'
+    });
     // first init
     if ($('.int').length > 0) {
         $('.int').focus();

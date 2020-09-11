@@ -60,6 +60,19 @@
         <!-- !!!!! 注意，非首頁main後面需要加上 innerpage classname -->
         <div id="center" class="main innerpage">
             <div class="container">
+                <!-- topBanner Start -->
+                <div class="topBanner">
+                    <a href="#">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="images/ad_banner.gif">
+                            <source media="(max-width: 767px)" srcset="images/ad_banner_s.gif">
+                            <img data-src="images/ad_banner.gif" class="lazy">
+                            <noscript><img src="images/ad_banner.gif"></noscript>
+                            <!-- img都以最大圖為標準 -->
+                        </picture>
+                    </a>
+                </div>
+                <!-- topBanner End-->
                 <!-- 查詢區塊 -->
                 <section class="searchBlock">
                     <div class="searchForBook">
@@ -116,7 +129,11 @@
                 <!-- 查詢結果區塊 -->
                 <section class="content">
                     <div class="lp">
-                        <h2 class="title"><i class="i_book"></i>搜尋結果</h2>
+                        <h2 class="title">
+                            <a href="#">電子書服務平台<small>(50)</small></a>
+                            <i class="i_book"></i>搜尋結果<small>(50)</small>
+
+                        </h2>
                         <div class="whatYouSearch">
                             <ul>
                                 <li><span>關鍵字：</span><a href="#">原子習慣<i class="i_close"></i></a></li>
@@ -423,6 +440,7 @@
                             </div>
                         </div>
                     </div>
+                    <p>提醒您：因電子書服務平台(國資圖)分屬不同平台，當您加入查詢館時，查詢結果將會分開顯示。</p>
                     <div class="btn_grp">
                         <button class="btn btn-green">確認新增</button>
                     </div>
